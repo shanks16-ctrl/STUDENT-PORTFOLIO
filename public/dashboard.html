@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portfolio System</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+        <h2>Welcome to Your Portfolio</h2>
+
+        <section class="form-section">
+            <h3 id="formHeading">Add Portfolio Details</h3>
+
+            <form id="portfolioForm">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Project or achievement title"
+                    required
+                >
+
+                <textarea
+                    id="description"
+                    placeholder="Enter description"
+                ></textarea>
+
+                <input
+                    type="text"
+                    id="skills"
+                    placeholder="Enter skills"
+                >
+
+                <input
+                    type="url"
+                    id="link"
+                    placeholder="Project link (optional)"
+                >
+
+                <button type="submit" id="saveBtn">Add Portfolio</button>
+                <button type="button" id="cancelBtn" class="hidden">
+                    Cancel Edit
+                </button>
+            </form>
+
+            <p id="portfolioMsg"></p>
+        </section>
+
+        <section>
+            <h3>My Portfolio Items</h3>
+            <div id="portfolioList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Student Portfolio System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

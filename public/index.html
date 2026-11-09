@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="heading">Student Login</h1>
+
+        <form id="authForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                class="hidden"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit" id="submitBtn">Login</button>
+        </form>
+
+        <p id="switchText">
+            New user?
+            <a href="#" id="switch">Register here</a>
+        </p>
+
+        <p id="msg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
